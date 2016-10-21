@@ -1,0 +1,150 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif, Arial,Verdana;
+}
+/*Layout*/
+#main{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#top{
+    height: 115px;
+}
+#logobg{
+    width: 250px;
+    float: left;
+    padding: 10px;
+    background-color: #fbb515;
+}
+#logo{
+    float:left;
+}
+#dk{
+    padding-left:15px;
+    padding-top:40px;
+    float:left;
+    font-size:20px;
+    font-weight:bold;
+}
+#sog{
+    float:right;
+    padding-top:95px;
+    font-size:16px;
+}
+.bar{
+    height:35px;
+    background-color:#CCC;
+  background: linear-gradient(to top, #CCC 0%, #808080 50%, #ccc);
+  background: -webkit-linear-gradient(bottom, #CCC 0%, #808080 50%, #ccc);
+}
+.menu{
+  float: left;
+  padding-left: 35px;
+  padding-top: 5px;
+}
+a:link, a:visited{
+  font-size: 14px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover{
+  text-decoration: underline;
+}
+#indhold{
+  height: 475px;
+  padding-top: 10px;
+  border-left:2px solid #ccc;
+  border-right:2px solid #ccc;
+  color:#000000;
+}
+/* Forside*/
+.rum{
+    width:220px;
+    float:left;
+    padding-left:15px;
+    padding-top:10px;
+    color:#000000;
+}
+#sli{
+    height:200px;
+}
+.top{
+    padding-top:20px;
+}
+img a{
+    border:none;
+}
+.tek{
+    font-size:15px;
+}
+/*model*/
+#over{
+    width:800px;
+    padding-top:20px;
+    font-size:20px;
+    text-align:center;
+}
+.model{
+    width:100px;
+    height:120px;
+    float:left;
+    padding:15px;
+}
+.mo{
+    height:80px;
+}
+.ren{
+    padding-top:5px;
+    font-size:12px;
+}
+.ren a:link, .ren a:visited{
+    color:#000;
+    text-decoration:underline;
+    font-size:12px;
+}
+.ren a:hover{
+    text-decoration:none;
+}
+/*booking*/
+.left{
+    width:300px;
+    float:left;
+    padding-left:50px;
+    padding-top:15px;
+}
+/*model*/
+.ned{
+    padding-top:25px;
+    font-size:17px;
+}
+#til{
+    padding-top:125px;
+    font-size:13px;
+}
+#til a:link, #til a:visited, .nyh a:link, .nyh a:visited{
+    color:#000000;
+    font-size:13px;
+    text-decoration:underline;
+}
+#til a:hover, .nyh a:hover{
+    text-decoration:none;
+}
+/*nyhed*/
+.nyh{
+    width:120px;
+    float:left;
+    padding-top:5px;
+    padding-left:10px;
+}
+.dato{
+    float:left;
+    padding-left:20px;
+    padding-top:5px;
+    color:#000;
+}
+.clear{
+    clear:left;
+}

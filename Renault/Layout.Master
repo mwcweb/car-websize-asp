@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="Renault.Layout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+ 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="main">
+            <div id="top">
+                <div id="logobg">
+                    <div id="logo"><img src="Billeder/Layout/logo.jpg" /></div>
+                    <div id="dk">Danmark</div>
+                </div>
+                <div id="sog">
+                    Søg <asp:TextBox ID="TextBox_sog" runat="server"></asp:TextBox>
+                    <asp:Button ID="Button_sog" runat="server" Text="Søg" OnClick="Button_sog_Click" /> 
+                </div>
+            </div>
+            <div class="bar">
+                <asp:Repeater ID="Repeater_menu" runat="server">
+                    <ItemTemplate>
+                        <div class="menu"><a href="<%# Eval("href") %>"><%# Eval("side") %></a></div>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
+            <div id="indhold">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="bar">
+                <asp:Repeater ID="Repeater_type" runat="server">
+                    <ItemTemplate>
+                        <div class="menu"><a href="type.aspx?id=<%# Eval("id") %>"><%# Eval("type") %></a></div>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
